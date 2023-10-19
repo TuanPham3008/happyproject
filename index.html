@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/canvas.css" />
+    <link rel="stylesheet" href="./assets/css/present.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="startForm">
+      <div class="startLetter">
+        <div class="contentLetter"></div>
+        <img class="myAI" src="" alt="">
+        <div class="sticker"></div>
+        <button class="recieve"><i class="fa-solid fa-gift"></i></button>
+      </div>
+    </div>
+
+    <div class="parent">
+      <canvas id="canvas"></canvas>
+      <section class="above-fold">
+        <div class="wrap-present">
+          <div class="present-box" id="present">
+            <div class="present">
+              <div class="img-wrap" id="present-image"></div>
+            </div>
+            <div class="side front"></div>
+            <div class="side back"></div>
+            <div class="side left"></div>
+            <div class="side right"></div>
+            <div class="side top">
+              <span class="to">
+                <span class="name" id="nametag"> </span>
+              </span>
+            </div>
+            <div class="side bottom"></div>
+          </div>
+        </div>
+        <p class="info-text"></p>
+      </section>
+
+      <div id="card">
+        <h4 class="title-card"></h4>
+
+        <img
+          src="./assets/img/Meo_Con1.jpg"
+          class="avt"
+        />
+
+        <h4 class="content-card"></h4>
+      </div>
+    </div>
+    <audio autoplay loop  id="playAudio">
+      <source src="./assets/music/nhacnen.mp3">
+    </audio>
+  </body>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/canvas.js"></script>
+  <script src="./assets/js/present.js"></script>
+  <script src="./assets/js/startform.js"></script>
+</html>
